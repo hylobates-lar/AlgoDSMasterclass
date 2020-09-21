@@ -4,6 +4,10 @@ let a = 'hello'
 let b = 'hiya'
 
 function validAnagram(str1, str2){
+    if (str1.length !== str2.length) {
+        return false
+    }
+    
     let str1Obj = {}
     let str2Obj = {}
 
